@@ -1,7 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './views/Home.vue'
-
+import Home from '@/views/index.vue'
+import Dm from '@/views/dm.vue'
+import Games from '@/views/games.vue'
+import Contact from '@/views/contact.vue'
 Vue.use(Router)
 
 export default new Router({
@@ -10,16 +12,24 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'home',
+      name: '主站',
       component: Home
     },
     {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
-    }
+      path: '/dm',
+      name: '番剧',
+      component: Dm
+    },
+    {
+      path: '/games',
+      name: '游戏',
+      component: Games
+    },
+    {
+      path: '/contact',
+      name: '灌水',
+      component: Contact
+    },
+   
   ]
 })
