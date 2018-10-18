@@ -1,14 +1,12 @@
 <template>
 <div>
-  <router-link :to='{name:"测试"}'>ccccccccc</router-link>
-  <router-view/>
+  <h1>asdsadasds</h1>
 </div>
-  
 </template>
 
 <script>
   export default {
-    name:'games',
+    name:'test',
     data () {return {
 
     }},

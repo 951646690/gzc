@@ -4,6 +4,7 @@ import Home from '@/views/index.vue'
 import Dm from '@/views/dm.vue'
 import Games from '@/views/games.vue'
 import Contact from '@/views/contact.vue'
+import Test from './components/test.vue'
 Vue.use(Router)
 
 export default new Router({
@@ -23,7 +24,14 @@ export default new Router({
     {
       path: '/games',
       name: '游戏',
-      component: Games
+      component: Games,
+      children:[
+        {
+          path:'/test',
+          name:'测试',
+          component:Test,
+        },
+      ],
     },
     {
       path: '/contact',
