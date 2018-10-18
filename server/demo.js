@@ -14,6 +14,10 @@ app.get('/get/:id&:n',(req,res)=>{
       content:'内容内容'
     },
     {
+      title:'标题1',
+      content:'内容内容'
+    },
+    {
       title:'标题2',
       content:'内容内容'
     },
